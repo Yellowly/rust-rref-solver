@@ -1,0 +1,120 @@
+html,
+body {
+    margin: 10px;
+    padding: 0;
+    text-align: center;
+    font-family: monospace;
+    background-color:#222326;
+    /* background-color: #353535; */
+}
+
+:root{
+    --inputbg: #2b2d31;
+}
+
+input{
+    height:3rem;
+    width:80px;
+    outline:none;
+    padding:0px;
+    border:2px solid #222326;
+    border-radius:8px;
+    background-color: var(--inputbg);
+    text-align: center;
+    font-family: monospace;
+    color:white;
+    font-size:1.9em;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+.dimentions{
+    width:90%;
+    height:fit-content;
+    margin:auto;
+    
+}
+.dimentions .x{
+    display:inline-block;
+    text-align: center;
+    margin-left:4px;
+    margin-right:4px;
+    font-family: monospace;
+    font-size:2em;
+    color:white;
+}
+
+.row{
+    height:3rem;
+    width:90%;
+    margin:auto;
+    margin-top:4px;
+    display: flex;
+    justify-content: center;
+    flex-wrap:nowrap;
+}
+
+.row .matrix-input{
+    height:100%;
+    width:auto;
+    display:inline-flex;
+    max-width:150px;
+    margin:0px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.row input{
+    width:100%;
+    height:100%;
+    padding:0px;
+    border:0px;
+    margin:0px;
+    /* height:100%;
+    width:auto;
+    max-width:240px;
+    display:inline-flex; */
+    /* outline:none;
+    padding:0px;
+    border:2px solid rgb(34, 35, 38);
+    background-color: rgb(58,59,62);
+    text-align: center;
+    font-family: monospace;
+    color:white;
+    font-size:2.5rem; */
+
+}
+
+.matrix{
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+
+button{
+    height:3.5rem;
+    width:100px;
+    outline:none;
+    padding:0px;
+    border:2px solid #222326;
+    border-radius:8px;
+    background-color: var(--inputbg);
+    text-align: center;
+    font-family: monospace;
+    color:white;
+    font-size:1.9em;
+}
+
+button:hover{
+    background-color: color-mix(in srgb, var(--inputbg), white 5%);
+}
+
+button:active{
+    background-color: color-mix(in srgb, var(--inputbg), white 10%);
+}
